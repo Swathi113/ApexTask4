@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Listing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="todo.html">To-Do List</a></li>
+        <li><a href="pets.html" class="active">Pet Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="birds">Birds</option>
+      </select>
+
+      <label for="sort">Sort:</label>
+      <select id="sort">
+        <option value="price">Price: Low to High</option>
+        <option value="rating">Rating: High to Low</option>
+      </select>
+    </div>
+
+    <div id="product-grid" class="product-grid">
+      <!-- Pet 1 -->
+      <div class="product-card" data-category="dogs" data-price="500" data-rating="4.5">
+        <img src="https://media.istockphoto.com/id/506756303/photo/golden-retriever.jpg?s=612x612&w=0&k=20&c=lSlI8QTutSk6qi5oyzBpDSQHJapG_qZoQUjhQpEoWUQ=" width="300" alt="Golden Retriever">
+        <h3>Golden Retriever</h3>
+        <p>Price: $500</p>
+        <p>Rating: 4.5 ⭐</p>
+      </div>
+
+      <!-- Pet 2 -->
+      <div class="product-card" data-category="cats" data-price="200" data-rating="4.7">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/036/127/223/small_2x/ai-generated-majestic-golden-persian-cat-with-amber-eyes-in-a-relaxed-pose-suitable-for-luxury-pet-branding-and-feline-health-content-photo.jpg"   width="300" alt="Persian Cat">
+        <h3>Persian Cat</h3>
+        <p>Price: $200</p>
+        <p>Rating: 4.7 ⭐</p>
+      </div>
+
+      <!-- Pet 3 -->
+      <div class="product-card" data-category="dogs" data-price="1000" data-rating="4.8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75ox9r13K6Sx4Q8M3d3jb0H_7q9Ch65wWfcUaxcgQe87FDuPDe-gVLvdGCdm_N3qD17s&usqp=CAU"   width="300" alt="Bulldog">
+        <h3>Bulldog</h3>
+        <p>Price: $1,000</p>
+        <p>Rating: 4.8 ⭐</p>
+      </div>
+
+      <!-- Pet 4 -->
+      <div class="product-card" data-category="birds" data-price="50" data-rating="4.3">
+        <img src="https://w0.peakpx.com/wallpaper/327/361/HD-wallpaper-flying-green-parrot-animal.jpg"  width="300" alt="Parrot">
+        <h3>Parrot</h3>
+        <p>Price: $50</p>
+        <p>Rating: 4.3 ⭐</p>
+      </div>
+
+      <!-- Pet 5 -->
+      <div class="product-card" data-category="cats" data-price="150" data-rating="4.6">
+        <img src="https://media.istockphoto.com/id/1076432222/photo/siamese-kitten.jpg?s=612x612&w=0&k=20&c=KjJzsMuiJYBzlxDpVeOBv9bYcjZQlnEd7W-dP7oEUh0="  width="300" alt="Siamese Cat">
+        <h3>Siamese Cat</h3>
+        <p>Price: $150</p>
+        <p>Rating: 4.6 ⭐</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pet Lovers. All rights reserved.</p>
+  </footer>
+
+  <script src="pets.js"></script>
+</body>
+</html>
